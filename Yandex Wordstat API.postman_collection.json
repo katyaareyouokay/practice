@@ -1,0 +1,484 @@
+{
+	"info": {
+		"_postman_id": "fc8dca76-86a5-419b-949d-2a4df3ad9143",
+		"name": "Yandex Wordstat API",
+		"description": "Текстовая коллеция с примнрами использования всех методов API и специальных символов во фразах.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46663358",
+		"_collection_link": "https://nezkate.postman.co/workspace/nezkate's-Workspace~bf8db3b5-2fc6-4d15-8ea4-1a7e1c5d6054/collection/46663358-fc8dca76-86a5-419b-949d-2a4df3ad9143?action=share&source=collection_link&creator=46663358"
+	},
+	"item": [
+		{
+			"name": "/v1/topRequests",
+			"item": [
+				{
+					"name": "https://api.wordstat.yandex.net/v1/topRequests",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "y0__xChkf2jCBjN7RAgvfHo4xMASAdtzxQZ7n2PNhhK0qGEcQoMbg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "\tapplication/json;charset=utf-8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"phrase\": \"котики\",\r\n  \"regions\": [2],\r\n  \"devices\": [\"desktop\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.wordstat.yandex.net/v1/topRequests",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wordstat",
+								"yandex",
+								"net"
+							],
+							"path": [
+								"v1",
+								"topRequests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://api.wordstat.yandex.net/v1/topRequests",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "y0__xChkf2jCBjN7RAgvfHo4xMASAdtzxQZ7n2PNhhK0qGEcQoMbg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"phrase\": \"!приют для (собак|кошек)\",\r\n  \"regions\": [2],\r\n  \"devices\": [\"desktop\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.wordstat.yandex.net/v1/topRequests",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wordstat",
+								"yandex",
+								"net"
+							],
+							"path": [
+								"v1",
+								"topRequests"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "/v1/dynamics",
+			"item": [
+				{
+					"name": "https://api.wordstat.yandex.net/v1/dynamics",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "y0__xChkf2jCBjN7RAgvfHo4xMASAdtzxQZ7n2PNhhK0qGEcQoMbg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"phrase\": \"купить ноутбук\",\r\n  \"period\": \"weekly\",\r\n  \"fromDate\": \"2024-02-05\",\r\n  \"toDate\": \"2024-04-07\",\r\n  \"regions\": [213],\r\n  \"devices\": [\"all\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.wordstat.yandex.net/v1/dynamics",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wordstat",
+								"yandex",
+								"net"
+							],
+							"path": [
+								"v1",
+								"dynamics"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://api.wordstat.yandex.net/v1/dynamics",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "y0__xChkf2jCBjN7RAgvfHo4xMASAdtzxQZ7n2PNhhK0qGEcQoMbg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"phrase\": \"заказать пиццу\",\r\n  \"period\": \"monthly\",\r\n  \"fromDate\": \"2024-05-01\",\r\n  \"toDate\": \"2024-12-31\",\r\n  \"regions\": [213],\r\n  \"devices\": [\"all\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.wordstat.yandex.net/v1/dynamics",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wordstat",
+								"yandex",
+								"net"
+							],
+							"path": [
+								"v1",
+								"dynamics"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://api.wordstat.yandex.net/v1/dynamics",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "y0__xChkf2jCBjN7RAgvfHo4xMASAdtzxQZ7n2PNhhK0qGEcQoMbg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"phrase\": \"заказать пиццу\",\r\n  \"period\": \"daily\",\r\n  \"fromDate\": \"2025-05-30\",\r\n  \"regions\": [2],\r\n  \"devices\": [\"all\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.wordstat.yandex.net/v1/dynamics",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wordstat",
+								"yandex",
+								"net"
+							],
+							"path": [
+								"v1",
+								"dynamics"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "/v1/regions",
+			"item": [
+				{
+					"name": "https://api.wordstat.yandex.net/v1/regions",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "y0__xChkf2jCBjN7RAgvfHo4xMASAdtzxQZ7n2PNhhK0qGEcQoMbg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"phrase\": \"купить (лабубу|попмарт)\",\r\n  \"regionType\": \"cities\",\r\n  \"devices\": [\"all\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.wordstat.yandex.net/v1/regions",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wordstat",
+								"yandex",
+								"net"
+							],
+							"path": [
+								"v1",
+								"regions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://api.wordstat.yandex.net/v1/regions",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "y0__xChkf2jCBjN7RAgvfHo4xMASAdtzxQZ7n2PNhhK0qGEcQoMbg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"phrase\": \"купить лабубу\",\r\n  \"regionType\": \"cities\",\r\n  \"devices\": [\"all\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.wordstat.yandex.net/v1/regions",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wordstat",
+								"yandex",
+								"net"
+							],
+							"path": [
+								"v1",
+								"regions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://api.wordstat.yandex.net/v1/regions",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "y0__xChkf2jCBjN7RAgvfHo4xMASAdtzxQZ7n2PNhhK0qGEcQoMbg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"phrase\": \"[купить чехол +для телефона]\",\r\n  \"regionType\": \"regions\",\r\n  \"devices\": [\"phone\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.wordstat.yandex.net/v1/regions",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wordstat",
+								"yandex",
+								"net"
+							],
+							"path": [
+								"v1",
+								"regions"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "/v1/getRegionsTree",
+			"item": [
+				{
+					"name": "https://api.wordstat.yandex.net/v1/getRegionsTree",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "y0__xChkf2jCBjN7RAgvfHo4xMASAdtzxQZ7n2PNhhK0qGEcQoMbg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=utf-8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.wordstat.yandex.net/v1/getRegionsTree",
+							"protocol": "https",
+							"host": [
+								"api",
+								"wordstat",
+								"yandex",
+								"net"
+							],
+							"path": [
+								"v1",
+								"getRegionsTree"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "token",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
